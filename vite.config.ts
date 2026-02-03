@@ -19,4 +19,9 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+    server: {
+    host: '0.0.0.0',  // Escucha en todas las interfaces de red
+    port: 5173,        // Puerto por defecto de Vite (puedes cambiarlo)
+    strictPort: false, // Si el puerto está ocupado, usar otro
+  },
 })
